@@ -1,0 +1,29 @@
+# HardcoreRevival Configuration
+
+# Messages (supports color codes with &)
+messages:
+  death-coordinates: "&cYou died at &e{x}, {y}, {z} &cin &e{world}&c. Find someone to revive you!"
+  revived: "&aYou have been revived by &e{reviver}&a!"
+  revived-other: "&aYou revived &e{player}&a!"
+  no-permission: "&cYou don't have permission to do that."
+  corpse-not-found: "&cNo corpse found for that player."
+  invalid-item: "&cYou need a Totem of Undying or a player head to revive them!"
+
+# Items that can be used to revive (any player head also works)
+revival-items:
+  - TOTEM_OF_UNDYING
+
+# Should the revival item be consumed?
+consume-item: true
+
+# Search radius for finding a safe spawn location (in blocks)
+safe-location-search-radius: 50
+
+# Corpse settings
+corpse:
+  # Use swimming pose (horizontal) - recommended for "dead body" look
+  use-swimming-pose: true
+  # Glow effect on corpse for visibility
+  glowing: false
+  # How long corpses last before auto-removal (in minutes, -1 for never)
+  expire-time: -1

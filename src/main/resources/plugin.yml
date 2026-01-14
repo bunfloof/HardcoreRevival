@@ -1,0 +1,28 @@
+name: HardcoreRevival
+version: '${version}'
+main: com.bun.hardcorerevival.HardcoreRevival
+api-version: '1.21'
+description: Hardcore revival system with player corpses
+author: bun
+
+# ProtocolLib is required for NPC corpses
+depend:
+  - ProtocolLib
+
+# Optional soft dependency for head drops
+softdepend:
+  - HeadDrop
+
+commands:
+  revival:
+    description: Admin commands for the revival plugin
+    usage: /revival <reload|list|remove <player>>
+    permission: hardcorerevival.admin
+
+permissions:
+  hardcorerevival.admin:
+    description: Admin commands for revival plugin
+    default: op
+  hardcorerevival.revive:
+    description: Allows reviving dead players
+    default: true
